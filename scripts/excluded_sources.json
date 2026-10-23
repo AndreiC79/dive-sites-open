@@ -1,0 +1,44 @@
+[
+  {
+    "name": "OpenDiveMap",
+    "url": "https://opendivemap.com/",
+    "checked": "2026-10-23",
+    "stated_license": "ODbL",
+    "reason": "3,114 of its 3,123 sites carry source=ssi with SSI ids, descriptions and photos copied from divessi.com (MyDiveGuide). SSI's catalogue is proprietary; OpenDiveMap cannot relicense it, so the ODbL label does not give us the right to redistribute it. The remaining 9 records are test-like entries ('a', 'en menorca')."
+  },
+  {
+    "name": "Dive Vibe Community (jbunderwater/dive-vibe-community)",
+    "url": "https://github.com/jbunderwater/dive-vibe-community",
+    "checked": "2026-10-23",
+    "stated_license": "ODbL-1.0 for OSM-derived data, MIT for code",
+    "reason": "Its sites come from OpenStreetMap (taken here at the source instead), but it adds depth, difficulty and entry values that no source supports (e.g. nautical-chart reefs given '25 m, Advanced'), and its community additions take coordinates partly from wannadive.net, whose reuse terms are not stated. Not imported, to keep only sourced facts and clear rights."
+  },
+  {
+    "name": "Diveboard citizen-science observations",
+    "url": "https://www.gbif.org/dataset/66f6192f-6cc0-45fd-a2d1-e76f5ae3eab2",
+    "checked": "2026-10-23",
+    "stated_license": "CC BY-NC 4.0 on GBIF (CC0 claimed elsewhere)",
+    "reason": "The publisher's GBIF record is non-commercial; the app is distributed commercially. The licences disagree, so it is left out."
+  },
+  {
+    "name": "PADI / SSI / Scubaearth / wannadive.net / divesites.com and similar catalogues",
+    "url": "",
+    "checked": "2026-10-23",
+    "stated_license": "proprietary / terms of use",
+    "reason": "No open licence or bulk-download permission; not scraped. A licensing agreement would be needed."
+  },
+  {
+    "name": "Regional government layers (Abrolhos dive trails WA CC BY 4.0; California dive sites on Data Basin CC BY 3.0; Rhode Island OceanSAMP; Turks and Caicos; Coastal BC)",
+    "url": "https://catalogue.data.wa.gov.au/dataset/abrolhos-islands-dive-trails",
+    "checked": "2026-10-23",
+    "stated_license": "mixed",
+    "reason": "Small regional sets. Turks and Caicos is restricted, Rhode Island and Coastal BC state no reusable licence; the CC BY ones (a few dozen sites) are candidates for a later round."
+  },
+  {
+    "name": "OpenStreetMap wrecks and reefs without diving tags (historic=wreck, seamark wrecks, natural=reef)",
+    "url": "https://www.openstreetmap.org/",
+    "checked": "2026-10-23",
+    "stated_license": "ODbL-1.0",
+    "reason": "Licence is fine, but a charted wreck or reef is not necessarily a dive site (beached wrecks, hazards at 200 m, reefs mapped for navigation). Only those that carry diving tags are imported."
+  }
+]

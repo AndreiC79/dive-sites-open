@@ -1,0 +1,100 @@
+{
+  "checks": {
+    "sqlite integrity": {
+      "ok": true,
+      "detail": "PRAGMA integrity_check"
+    },
+    "invalid coordinates": {
+      "ok": true,
+      "detail": "none outside WGS84 ranges or at 0,0"
+    },
+    "missing names": {
+      "ok": true,
+      "detail": "every site has a name"
+    },
+    "exact duplicates": {
+      "ok": true,
+      "detail": "0 name+position pairs repeated"
+    },
+    "missing provenance": {
+      "ok": true,
+      "detail": "0 sites without a source record"
+    },
+    "missing licence": {
+      "ok": true,
+      "detail": "0 sites without a licence"
+    },
+    "implausible depths": {
+      "ok": true,
+      "detail": "0 sites"
+    },
+    "encoding problems": {
+      "ok": true,
+      "detail": "0 names with replacement characters or mojibake"
+    },
+    "dense clusters (info)": {
+      "ok": true,
+      "detail": [
+        "(53.7, 9.13): 42",
+        "(51.48, 10.81): 27"
+      ]
+    },
+    "search probes (info)": {
+      "ok": true,
+      "detail": [
+        {
+          "search": "thistlegorm",
+          "matches": 1,
+          "within_30km_of_expected": 1,
+          "examples": [
+            "SS Thistlegorm"
+          ]
+        },
+        {
+          "search": "blue hole",
+          "matches": 3,
+          "within_30km_of_expected": 1,
+          "examples": [
+            "Il-Ħofra tal-Bidwin",
+            "Blue Holes",
+            "Blue Hole"
+          ]
+        },
+        {
+          "search": "elphinstone",
+          "matches": 1,
+          "within_30km_of_expected": 1,
+          "examples": [
+            "Elphinstone Reef"
+          ]
+        },
+        {
+          "search": "zenobia",
+          "matches": 1,
+          "within_30km_of_expected": 1,
+          "examples": [
+            "Zenobia Shipwreck"
+          ]
+        }
+      ]
+    },
+    "proximity query": {
+      "ok": true,
+      "detail": "65 sites within 50 km of Hurghada; box query found 65"
+    },
+    "bounding box uses the index": {
+      "ok": true,
+      "detail": "SEARCH site USING INDEX site_lat_lon (lat>? AND lat<?)"
+    }
+  },
+  "summary": {
+    "Raw records downloaded (unique OSM objects + Wikidata items)": "5,388",
+    "Sources successfully imported": "osm, wikidata",
+    "Records rejected (dive centres, unclear, no name, bad coordinates)": "2,017",
+    "Duplicates merged": "60",
+    "Final unique dive sites": "3,311",
+    "Countries represented": "89",
+    "SQLite size": "1.25 MB",
+    "Unresolved possible duplicates (review_duplicates.csv)": "53"
+  }
+}

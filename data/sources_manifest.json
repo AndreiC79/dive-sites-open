@@ -1,0 +1,129 @@
+{
+  "built_at": "2026-10-23T18:50:55Z",
+  "database_license": "ODbL-1.0",
+  "sources": [
+    {
+      "name": "OpenStreetMap",
+      "license": "ODbL-1.0",
+      "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "attribution": "© OpenStreetMap contributors",
+      "attribution_url": "https://www.openstreetmap.org/copyright",
+      "url": "https://www.openstreetmap.org/",
+      "id": "osm",
+      "records_accepted": 3056,
+      "extracted": [
+        {
+          "file": "osm_divespot.json",
+          "extracted_at": "2026-10-23T18:40:52Z",
+          "osm_base": "2026-10-23T18:39:06Z",
+          "elements": 1509
+        },
+        {
+          "file": "osm_scuba_depth.json",
+          "extracted_at": "2026-10-23T18:44:04Z",
+          "osm_base": "2026-10-23T18:43:05Z",
+          "elements": 571
+        },
+        {
+          "file": "osm_scuba_entry.json",
+          "extracted_at": "2026-10-23T18:44:59Z",
+          "osm_base": "2026-10-23T18:43:05Z",
+          "elements": 765
+        },
+        {
+          "file": "osm_scuba_name.json",
+          "extracted_at": "2026-10-23T18:45:38Z",
+          "osm_base": "2026-10-23T18:44:11Z",
+          "elements": 328
+        },
+        {
+          "file": "osm_scuba_plain.json",
+          "extracted_at": "2026-10-23T18:46:25Z",
+          "osm_base": "2026-10-23T18:45:16Z",
+          "elements": 43
+        },
+        {
+          "file": "osm_scuba_type.json",
+          "extracted_at": "2026-10-23T18:43:15Z",
+          "osm_base": "2026-10-23T18:42:06Z",
+          "elements": 335
+        },
+        {
+          "file": "osm_sport_key.json",
+          "extracted_at": "2026-10-23T18:42:31Z",
+          "osm_base": "2026-10-23T18:41:05Z",
+          "elements": 101
+        },
+        {
+          "file": "osm_sport_scuba.json",
+          "extracted_at": "2026-10-23T18:41:51Z",
+          "osm_base": "2026-10-23T18:40:06Z",
+          "elements": 4877
+        }
+      ]
+    },
+    {
+      "name": "Wikidata",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Wikidata (CC0)",
+      "attribution_url": "https://www.wikidata.org/",
+      "url": "https://www.wikidata.org/",
+      "id": "wikidata",
+      "records_accepted": 315,
+      "extracted": "2026-10-23T18:39:58Z"
+    }
+  ],
+  "helper_data": [
+    {
+      "name": "Natural Earth 1:10m admin-0 countries",
+      "license": "Public domain",
+      "url": "https://www.naturalearthdata.com/",
+      "use": "country of each site"
+    }
+  ],
+  "excluded": [
+    {
+      "name": "OpenDiveMap",
+      "url": "https://opendivemap.com/",
+      "checked": "2026-10-23",
+      "stated_license": "ODbL",
+      "reason": "3,114 of its 3,123 sites carry source=ssi with SSI ids, descriptions and photos copied from divessi.com (MyDiveGuide). SSI's catalogue is proprietary; OpenDiveMap cannot relicense it, so the ODbL label does not give us the right to redistribute it. The remaining 9 records are test-like entries ('a', 'en menorca')."
+    },
+    {
+      "name": "Dive Vibe Community (jbunderwater/dive-vibe-community)",
+      "url": "https://github.com/jbunderwater/dive-vibe-community",
+      "checked": "2026-10-23",
+      "stated_license": "ODbL-1.0 for OSM-derived data, MIT for code",
+      "reason": "Its sites come from OpenStreetMap (taken here at the source instead), but it adds depth, difficulty and entry values that no source supports (e.g. nautical-chart reefs given '25 m, Advanced'), and its community additions take coordinates partly from wannadive.net, whose reuse terms are not stated. Not imported, to keep only sourced facts and clear rights."
+    },
+    {
+      "name": "Diveboard citizen-science observations",
+      "url": "https://www.gbif.org/dataset/66f6192f-6cc0-45fd-a2d1-e76f5ae3eab2",
+      "checked": "2026-10-23",
+      "stated_license": "CC BY-NC 4.0 on GBIF (CC0 claimed elsewhere)",
+      "reason": "The publisher's GBIF record is non-commercial; the app is distributed commercially. The licences disagree, so it is left out."
+    },
+    {
+      "name": "PADI / SSI / Scubaearth / wannadive.net / divesites.com and similar catalogues",
+      "url": "",
+      "checked": "2026-10-23",
+      "stated_license": "proprietary / terms of use",
+      "reason": "No open licence or bulk-download permission; not scraped. A licensing agreement would be needed."
+    },
+    {
+      "name": "Regional government layers (Abrolhos dive trails WA CC BY 4.0; California dive sites on Data Basin CC BY 3.0; Rhode Island OceanSAMP; Turks and Caicos; Coastal BC)",
+      "url": "https://catalogue.data.wa.gov.au/dataset/abrolhos-islands-dive-trails",
+      "checked": "2026-10-23",
+      "stated_license": "mixed",
+      "reason": "Small regional sets. Turks and Caicos is restricted, Rhode Island and Coastal BC state no reusable licence; the CC BY ones (a few dozen sites) are candidates for a later round."
+    },
+    {
+      "name": "OpenStreetMap wrecks and reefs without diving tags (historic=wreck, seamark wrecks, natural=reef)",
+      "url": "https://www.openstreetmap.org/",
+      "checked": "2026-10-23",
+      "stated_license": "ODbL-1.0",
+      "reason": "Licence is fine, but a charted wreck or reef is not necessarily a dive site (beached wrecks, hazards at 200 m, reefs mapped for navigation). Only those that carry diving tags are imported."
+    }
+  ]
+}
